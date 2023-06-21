@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { AddCodesComponent } from './components/add-codes/add-codes.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AddCodesComponent
+    AddCodesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
