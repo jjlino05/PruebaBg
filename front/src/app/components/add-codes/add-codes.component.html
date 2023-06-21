@@ -1,0 +1,22 @@
+<form class="text-center">
+  <p>Listado de producto</p>
+
+  <div *ngFor="let product of products">
+  <div class="product-preview mx-auto">
+    <div class="product-image">
+      <img src="../assets/img/{{product.imagen}}" alt="Vista previa del producto">
+    </div>
+    <div class="product-details">
+      <h3>Nombre del producto: {{ product.nombre }}</h3>
+    <input class="form-control" type="text"  value="product.nombre" name="inputValue" id="inputValue" [(ngModel)]="inputValue" />
+
+      <p>Descripción del producto: {{ product.descripcion }}</p>
+      <p>Precio: {{ product.precio }}</p>
+    </div>
+  </div>
+  <input class="btn btn-primary" type="button" value="Añadir" (click)="sendData(product.nombre)" />
+</div>
+
+  
+</form>
+
